@@ -1,0 +1,135 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta name="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="" name="">
+    <title>Template</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .ks-parent-bg-color {
+        background-color: #0b6c73;
+      }
+      .head-bg-img {
+        background-image: url(img/bg-img.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 175px;
+      }
+      .head-bg-img h2 {
+        padding: 20px;
+        text-align: center;
+        font-size: 32px;
+        color: #fff;
+        margin: 0;
+      }
+      .bottom-border-area {
+        background-color: #fff;
+        border-radius: 20px;
+        padding: 20px 80px;
+        margin-top: -30px;
+      }
+      .bottom-area-column, .bottom-column-two {
+        display: flex;
+        align-items: center;
+        width: 100%;
+      }
+      .bottom-area-column {
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+      .bottom-column-two {
+        justify-content: flex-end;
+      }
+      .bottom-column-one, .bottom-column-two {
+        flex-basis: 50%;
+      }
+      .mb-30 {
+        margin-bottom: 30px;
+      }
+      .mb-25 {
+        margin-bottom: 25px;
+      }
+      .arrow-img, .bottom-column-two img {
+        vertical-align: middle;
+        object-fit: cover;
+      }
+      .column-btn {
+        font-size: 15px;
+        padding: 10px;
+      }
+      .top-arrow-btn {
+        background-color: #facc80;
+        border: none;
+        border-radius: 50px;
+        font-weight: bold;
+      }
+      .top-dotted-btn {
+        border-radius: 8px;
+        border: 1px solid dotted;
+        background-color: transparent;
+        border-style: dotted;
+      }
+      .bottom-column-images {
+        flex-basis: 25%;
+        text-align: center;
+      }
+      @media screen and (max-width:568px) {
+        .bottom-border-area {
+          padding: 20px;
+        }
+        .bottom-area-column {
+          display: block;
+        }
+        .bottom-column-two {
+          justify-content: flex-start;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ks-parent-bg-color">
+      <div class="head-bg-img">
+        <h2>Welcome User1</h2>
+      </div>
+      <div class="bottom-border-area">
+        <div class="mb-25">
+          <button type="button" class="column-btn top-arrow-btn"><span>Quick Start</span> <img src="img/arrow-icon.png" alt="arrow-icon" class="arrow-img" width="25" height="25"></button>
+        </div>
+        <div class="bottom-area-column">
+          <div class="bottom-column-one">
+            <div class="mb-30">
+              <button type="button" class="column-btn top-dotted-btn">Buid your Website</button>
+            </div>
+            <div class="mb-30">
+              <button type="button" class="column-btn top-dotted-btn">Create a Cource</button>
+            </div>
+            <div class="mb-30">
+              <button type="button" class="column-btn top-dotted-btn">Create an Offer</button>
+            </div>
+            <div class="mb-30">
+              <button type="button" class="column-btn top-dotted-btn">Create a marketing campaign</button>
+            </div>
+          </div>
+          <div class="bottom-column-two">
+            <div class="bottom-column-images">
+              <img src="img/user-guide-icon.png" alt="img-right-side-icon" class="right-side-img" width="100" height="100">
+            </div>
+            <div class="bottom-column-images">
+              <img src="img/play-icon.png" alt="img-right-side-icon" class="right-side-img" width="100" height="100">
+            </div>
+            <div class="bottom-column-images">
+              <img src="img/project-iocn.png" alt="img-right-side-icon" class="right-side-img" width="100" height="100">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
